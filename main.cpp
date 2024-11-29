@@ -53,20 +53,6 @@ void interpret(const std::string& file_name) {
             // PASS
         } else if (line.find("//") != std::string::npos) {
             // Prosto NULL :)
-        } else if (line.find("os;name;") != std::string::npos) {
-            #ifdef _WIN32
-            std::cout << "Windows 64-bit" << std::endl;
-            #elif defined(__linux__)
-            std::cout << "Linux" << std::endl;
-            #elif defined(__APPLE__) && defined(__MACH__)
-            std::cout << "macOS" << std::endl;
-            #elif defined(__unix__)
-            std::cout << "UNIX" << std::endl;
-            #elif defined(__CYGWIN__)
-            std::cout << "Cygwin" << std::endl;
-            #else
-            std::cout << "-" << std::endl;
-            #endif
         } else if (line.find("os;exit;") != std::string::npos) {
             std::exit(0);
         } else {

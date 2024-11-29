@@ -62,20 +62,6 @@ void interept(const char * file_name) {
             // PASS
         } else if (strstr(line, "//") != NULL) {
             // Prosto NULL :)
-        } else if (strstr(line, "os;name;")){
-                #ifdef _WIN32
-                printf("Windows 64-bit\n");
-                #elif defined(__linux__)
-                printf("Linux\n");
-                #elif defined(__APPLE__) && defined(__MACH__)
-                printf("macOS\n");
-                #elif defined(__unix__)
-                printf("UNIX\n");
-                #elif defined(__CYGWIN__)
-                printf("Cygwin\n");
-                #else
-                printf("-\n");
-                #endif
         } else if (strstr(line, "os;exit;")){
             exit(0);
         } else {
