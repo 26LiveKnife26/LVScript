@@ -44,8 +44,13 @@ LVScript предложит интерактивные возможности, �
 
 ## ⬆️ Установка 💻️ ##
 
-Linux:
-    1. sudo apt update
+1. sudo apt update
+2. sudo apt upgrade
+3. git clone https://github.com/26LiveKnife26/LVScript/
+4. cd LVScript
+5. (Необязательно)gcc -o main main.c (или) g++ -o main main.cpp
+6. ./main(запуск интепретатора)
+
 ---
 
 ## 🏁 Заключение 💤 ##
