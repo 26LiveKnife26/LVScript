@@ -48,8 +48,15 @@ LVScript предложит интерактивные возможности, �
 2. 🔗 sudo apt upgrade 🔗
 3. 🔗 git clone https://github.com/26LiveKnife26/LVScript/ 🔗
 4. 🔗 cd LVScript 🔗
-5. 🔗 gcc -o main main.c (или) g++ -o main main.cpp 🔗
+5. 🔗 gcc -o main main.c (или) (Этот вариант более надёжный) g++ -o main main.cpp 🔗
 6. 🔗 ./main 🔗
+
+---
+
+## 👨‍👨‍👦 Наши сообщества ✉️ ##
+
+У нас есть очень много сообществ! Вот большая их часть:
+- [Telegramm](https://t.me/@snowman)
 
 ---
 

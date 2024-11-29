@@ -64,9 +64,7 @@ void interept(const char * file_name) {
             // Prosto NULL :)
         } else if (strstr(line, "os;exit;")){
             exit(0);
-        } else {
-            printf("LVS: Find Error: not find a command %s", line);
-        }
+        } 
     fclose(script);
     }
 }
