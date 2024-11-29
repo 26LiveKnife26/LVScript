@@ -45,7 +45,7 @@ LVScript предложит интерактивные возможности, �
 ## ⬆️ Установка 💻️ ##
 
 Linux:
-    sudo apt update
+    1. sudo apt update
 ---
 
 ## 🏁 Заключение 💤 ##
