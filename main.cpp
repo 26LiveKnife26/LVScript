@@ -4,6 +4,9 @@
 #include <cstdlib>
 #include <unistd.h>
 #include <cstring>
+#include <chrono>
+#include <iomanip>
+#include <ctime>
 
 void interpret(const std::string& file_name) {
     std::string full_file_name = file_name + ".lvs";
@@ -55,13 +58,54 @@ void interpret(const std::string& file_name) {
             // Prosto NULL :)
         } else if (line.find("os;exit;") != std::string::npos) {
             std::exit(0);
-        } else {
-            std::cout << "LVS: Find Error: not find a command " << line;
-        }
+        } else if (line.find("set;com;ver;") != std::string::npos) {
+                std::string version;
+                switch (__cplusplus){
+                case 1:
+                    version = "Standart C++";
+                    break;
+                case 199711L:
+                    version = "C++ 98";
+                    break;
+                case 201103L:
+                    version = "C++ 11";
+                    break;
+                case 201402L:
+                    version = "C++ 14";
+                    break;
+                case 201703L:
+                    version = "C++ 17";
+                    break;
+                case 202002L:
+                    version = "C++ 20";
+                    break;
+                case 202100L:
+                    version = "C++ 20";
+                    break;
+                default:
+                    version = "-";
     }
+                std::cout << "" << version;
+        } else if (line.find("set;protocol;") != std::string::npos) {
+            std::cout << "LVSProtocol 2.0.3 - CODING PROTOCOL";
+        } else if (line.find("set;coding;") != std::string::npos) {
+            std::cout << "UTF-8";
+        } else if (line.find("set;int;") != std::string::npos) {
+            std::cout << "GCC/G++ INT - LiveStudioInterept 2.0.3(CP(Coding Protocol) - 2.0.3)";
+        } else if (line.find("set;com;ver;") != std::string::npos) {
+            std::cout << "LVSInt 2.0.3";
+        } else if (line.find("set;bin;") != std::string::npos) {
+            std::cout << "Binary MAIN - 2.0.3 / main.BIN";
+        } else if (line.find("set;") != std::string::npos) {
+            std::cout << "LVS: Settings Error: not find a argument";
+        }
+        else {
+            //z
+        }
     script.close();
+    }
 }
-
+       
 int main() {
     interpret("main");
     std::cout << std::endl;

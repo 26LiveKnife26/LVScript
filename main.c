@@ -62,9 +62,19 @@ void interept(const char * file_name) {
             // PASS
         } else if (strstr(line, "//") != NULL) {
             // Prosto NULL :)
-        } else if (strstr(line, "os;exit;")){
+        } else if (strstr(line, "os;exit;") != NULL){
             exit(0);
-        } 
+        } else if (strstr(line, "set;protocol;") != NULL) {
+            printf("LVSProtocol 2.0.3 - CODING PROTOCOL");
+        } else if (strstr(line, "set;coding;") != NULL) {
+            printf("UTF-8");
+        } else if (strstr(line, "set;int;") != NULL) {
+            printf("GCC/G++ INT - LiveStudioInterept 2.0.3(CP(Coding Protocol) - 2.0.3)");
+        } else if (strstr(line, "set;int;ver;") != NULL) {
+            printf("LVSInt 2.0.3");
+        } else {
+            printf("LVS: Syntax Error: not find command a %s", line);
+        }
     fclose(script);
     }
 }
