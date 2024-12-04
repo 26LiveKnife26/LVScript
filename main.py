@@ -49,6 +49,7 @@ def interpret(FILE_NAME):
                     print("LVS: Import Error: not find a %s" % line.replace("#import ", ""))
             elif "#include" in line:
                 print("Bruh =\. This is not C, this is LVScript ¯ \ _ (ツ) _ / ¯. Hohoho =)")
+            elif
     SCRIPT.close()
 if __name__ == "__main__":
     interpret("main")
