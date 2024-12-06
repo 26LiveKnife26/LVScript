@@ -1,4 +1,4 @@
-# LVScript - Новый Язык Программирования
+# LVScript - Новый Язык Программирования #
 
 ---
 
@@ -60,7 +60,11 @@ LVScript предложит интерактивные возможности, �
     sudo apt upgrade
     git clone https://github.com/26LiveKnife26/LVScript/
     cd LVScript
-    gcc -o main main.c (или) (Этот вариант более надёжный) g++ -o main main.cpp
+    python3 -B main.py
+А как же скомпилировать его в бинарный файл?:
+    pip install pyinstaller
+    pyinstaller --onefile main.py
+    cd dist
     ./main
 
 ---
