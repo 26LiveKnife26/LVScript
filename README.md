@@ -61,6 +61,7 @@ LVScript предложит интерактивные возможности, �
     git clone https://github.com/26LiveKnife26/LVScript/
     cd LVScript
     python3 -B main.py
+
 А как же скомпилировать его в бинарный файл?:
     pip install pyinstaller
     pyinstaller --onefile main.py
