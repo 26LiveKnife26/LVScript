@@ -1,1 +1,2 @@
-readme;
+#import lime
+lime.now.m %H:%S
