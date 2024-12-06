@@ -63,6 +63,7 @@ LVScript предложит интерактивные возможности, �
     python3 -B main.py
 
 А как же скомпилировать его в бинарный файл?:
+
     pip install pyinstaller
     pyinstaller --onefile main.py
     cd dist
